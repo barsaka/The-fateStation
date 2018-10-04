@@ -97,18 +97,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
    html body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: medium;
-    line-height: 1.6em;
+    line-height: 1.6em;height:100%;
     background-color: rgb(246, 248, 245);
     margin: 0;
-    padding: 0;
-    height: 100%;
-    
+    padding: 0;   
 }
 h1{ font-family: 'Times New Roman', Times, serif;font-size: 150%;font-weight: bold;}
 #headleft{ font-family: Arial, Helvetica, sans-serif;margin: 600px 0 0 0;}
-#headright{ margin: 0 0 100px 1000px;}
+#headright{ margin: 0 0 100px 70%;}
 header{ 
-    margin: 0 12px 0 12px;
+    margin: 0 15px;
     padding: 0;
     border: 0;
     height: 900px;
@@ -120,37 +118,59 @@ header{
     border-style:none;
     padding: 25px;
 }
-.head2{ background: rgb(38, 120, 158);}
-.head2 ul li{
+.head2{ font-size:  16px;
+    box-shadow: 0px 2px 1px #a4c3d0;
+    width: 100%;
+    height: 50px;
+    background: url(../resourse/background/guide1.png);
+    background-position: right;
+    width: 100%;height: 50px;
+}
+.head2 ul li {
     display: inline-block;
-    padding: 8px 50px;
+    cursor:pointer;
+    text-align: center;
+    padding: 5px 30px;
     background: rgb(75, 166, 226);
-    line-height: normal;
-    color: blanchedalmond;
+    line-height: 50px;
+    color: #0f6bac;
     height: 30px;
     overflow: hidden;
     text-decoration: none;
-    border-left: 2px solid rgb(17, 37, 150);
+    border-left: 5%;
 }
-.guide{float: right;}
-#main{height: auto;
-      min-height: 100%;}
+#main{height: auto!important; 
+      
+    }
 #right{
-    width: 250px;
+    width: 30%;text-decoration:none;
     float: right;
     margin: 25px;
 }
+#right img{width:300px;height:150px;position: relative;}
 #left{
-    width: 1000px;
+    width: 70%;
+    height: 1800px;
     float: left;
-    margin: 25px;
+    position:absolute;
 }
-footer{
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    bottom: 0;
+a{cursor: pointer;}
+#rolling ul{ 
+    width: 100%;
+    overflow-y:hidden;
+    overflow-x:auto;
+    white-space: nowrap;
+}
+#rolling li{ 
+    height: 361;
+    display: inline-table;
+    vertical-align: top;
+    width:250px;
+}
 
+footer{  
+    width: 100%
+   
  }
 
 
